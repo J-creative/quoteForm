@@ -54,7 +54,7 @@ function App() {
 
       {formpage<600 && <button className='forward' onClick={forwardpressed}>Next step</button>}
       {formpage > 100 && formpage<600 && <Pricecalc  quote={quote} PRICES= {PRICES}/>}
-      {formpage>100 && formpage<700 &&  <button className='back' onClick={backpressed}><Icon className='arrow'>arrow_back</Icon>go back</button>}
+      {formpage>100 && formpage<700 &&  <button className='back' onClick={backpressed}>go back</button>}
 
     </div>
   );
