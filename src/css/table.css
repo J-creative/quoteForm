@@ -1,0 +1,68 @@
+.end-table{
+    border-collapse: collapse;
+    margin: 0.5rem auto;
+    min-width: 400px;
+    color: white;
+    font-family: Raleway, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #5076C4;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    border: white solid 5px;
+ 
+}
+.scn{
+    font-weight: bold;
+    background-color: #FFE48D;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: white dashed 2px;
+}
+
+.appoption{
+    color:rgb(187, 187, 187);
+    size: 0.9rem;
+    line-height: 1.5rem;
+    border-bottom: none;
+}
+tr {
+   
+    border-bottom: white 1px solid;
+}
+td{
+    padding-left: 1rem;
+}
+.ttl{
+  
+    border-top: white dashed 2px;
+}
+
+.total{
+    margin: 2rem;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.total div{
+    max-width: 400px;
+
+}
+
+.endform{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    padding-left: 15px;
+}
+.endform input, textarea{
+    width: calc(100% - 20px);
+    font-size: 1.2rem;
+    height: 1.4rem;
+}
+.endform textarea{
+    height: 4.2rem;
+}

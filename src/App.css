@@ -1,0 +1,84 @@
+:root{
+  --blue:#5076C4;
+}
+
+body{
+  background-color: #FFE48D;
+}
+
+.app {
+  display: flex;
+  margin:0 auto;
+  text-align: center;
+  align-content: center;
+  max-width: 900px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.container{
+  margin: 2rem auto;
+  max-width: 600px;
+  border-width: 5px;
+
+
+}
+.forward,.submit {
+  width: fit-content;
+  color: white;
+  background-color: #BD8FFF;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 200ms ease-in-out;
+  align-self: center;
+  
+}
+
+button:hover{
+
+  cursor: pointer;
+}
+.forward:hover, .submit{
+border-color: #FF00BA;
+transform: scale(1.3);
+cursor: pointer;
+}
+
+.back{
+  background-color: none;
+  color: var(--blue);
+  
+  width: fit-content;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+
+  margin: 0rem;
+  padding: 0rem 0rem;
+  align-self: center;
+}
+
+.arrow{
+  vertical-align: middle;
+  font-size: 0.8rem;
+}
+
+.price{
+  font-size: 1.6rem;
+  margin: 0.3rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
