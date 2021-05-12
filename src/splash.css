@@ -1,0 +1,227 @@
+:root{
+    --blue:#5076C4;
+    --headHeight:100px;
+  }
+/* *{
+    border: 2px solid black;
+} */
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+button {
+    width: fit-content;
+    color: white;
+    background-color: #BD8FFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    transition: 200ms ease-in-out;
+    align-self: center;
+    font-family: 'raleway', 'sans-serif';
+    font-weight: 800;
+  }
+
+  /* this is page container */
+section div {
+    max-width: 1100px;
+    display: flex;
+}
+
+header{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2%;
+}
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: 'heebo';
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: left;
+    margin-left: 10px;
+}
+h3{
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+section:nth-child(odd){
+    background-color: var(--blue);
+    border-top: 10px dashed white;
+    border-bottom: 10px dashed white;
+    color: white;
+}
+section:nth-child(even) {
+    border-top: 10px dashed black;
+    border-bottom: 10px dashed black;
+}
+section:nth-child(2) {
+    border-top: none;
+}
+section:nth-child(10) {
+    border-bottom: none;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* same as .wide */
+section div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.front{
+    height: calc(100vh - var(--headHeight));
+    display: flex;
+    align-items: center;
+}
+.salad{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.front div div{
+    width: 50%;
+}
+
+
+/* ensures the two colums content is displayed below each other */
+
+.wide div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.d2{
+    padding: 0.8rem 3rem;
+}
+.d3{
+    padding: 0.8rem 3rem;
+}
+.d3 div{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.pizza{
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+    border: 0.5em solid black;
+    border-radius: 10%;
+}
+
+.d4{
+    justify-content: left;
+}
+
+.d4 div{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.d5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#boxes{
+    flex-direction: row;
+    padding: 1rem 0.2rem;
+}
+@media (max-width: 680px){
+    #boxes{
+        flex-direction: column;
+    }
+}
+
+.bluebox{
+    box-sizing: border-box;
+    margin: 10px 10px;
+    height: 100%;
+    padding: 0.4rem;
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: var(--blue);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+/* section6 food icons */
+.d6 div{
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 300px;
+    padding: 0.8rem 0.5rem;
+}
+
+.foodIcons{
+    width: 80%;
+}
+.milkshake img{
+        width: 80%;
+        max-width: 400px;
+        min-width: 200px;
+        border: 0.5em solid white;
+        border-radius: 10%;
+
+}
+
+.d7 div{
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 300px;
+    padding: 0rem 0.5rem;
+}
+
+
+.portraits img{
+        width: 80%;
+        max-width: 400px;
+        min-width: 200px;
+
+}
+
+.d8 div{
+    columns: 300px 2;
+    align-items: start;
+}
+.d8 div div p {
+    font-family: 'raleway','sans-serif';
+    font-size: 1rem;
+    line-height: 1.1rem;   /* within paragraph */
+    margin: 1px 10px; /* between paragraphs */
+    text-align: left;
+}
+.bold{
+    font-weight: 700;
+    padding-top: 0.8rem;
+}
+
+.d9{
+    padding: 0.5rem 0 0.5rem 0;
+}

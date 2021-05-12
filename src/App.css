@@ -1,9 +1,14 @@
 :root{
   --blue:#5076C4;
+  --yellow:#FFE48D;
 }
 
 body{
   background-color: #FFE48D;
+}
+
+.form{
+  max-width: 600px;
 }
 
 .app {
@@ -11,7 +16,6 @@ body{
   margin:0 auto;
   text-align: center;
   align-content: center;
-  max-width: 900px;
   height: 100%;
   flex-direction: column;
 }
